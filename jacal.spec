@@ -1,14 +1,14 @@
 Summary:	Jacal - symbolic mathematics system written in Scheme
 Summary(pl.UTF-8):	Jacal - system matematyki symbolicznej napisany w Scheme
 Name:		jacal
-Version:	1c7
-Release:	2
+Version:	2a1
+Release:	1
 License:	GPL v3+
 Group:		Development/Languages/Scheme
-Source0:	http://groups.csail.mit.edu/mac/ftpdir/scm/%{name}-%{version}.zip
-# Source0-md5:	72d6bb0f029e436407b67a662729e38b
+Source0:	https://groups.csail.mit.edu/mac/ftpdir/scm/%{name}-%{version}.zip
+# Source0-md5:	a1b61af9e6183d82c2c029425286defd
 Patch0:		%{name}-info.patch
-URL:		http://people.csail.mit.edu/jaffer/JACAL
+URL:		https://people.csail.mit.edu/jaffer/JACAL
 BuildRequires:	slib
 BuildRequires:	texinfo
 Requires:	scm
@@ -58,6 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/jacal
 %dir %{_libdir}/jacal
 %{_libdir}/jacal/*.scm
+%{_libdir}/jacal/init.math
 %{_libdir}/jacal/jacalcat
 %{_libdir}/jacal/COPYING
 %{_libdir}/jacal/HELP
